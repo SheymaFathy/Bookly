@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import '../../../../../core/utils/assets.dart';
 import 'custom_appbar.dart';
 import 'custom_listview_item.dart';
 
