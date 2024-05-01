@@ -1,4 +1,3 @@
-import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +12,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return   const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24.0),
+      padding: EdgeInsets.symmetric(horizontal: 30.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -22,13 +21,17 @@ class HomeViewBody extends StatelessWidget {
       SizedBox(height: 50,),
       Text('Best Seller',
        style: Styles.textStyle18),
-      BestSellerListView(),
+       SizedBox(
+        height: 20,
+       ),
+      BestSellerListViewItem(),
 
         ],
       ),
     );
   }
 }
+
 
 
 
