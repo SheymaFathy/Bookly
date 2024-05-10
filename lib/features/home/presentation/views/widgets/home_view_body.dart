@@ -2,6 +2,7 @@ import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
 import 'best_seller_view.dart';
 import 'custom_appbar.dart';
 import 'featured_listview.dart';
