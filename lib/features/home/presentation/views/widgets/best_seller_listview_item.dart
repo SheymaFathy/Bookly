@@ -6,8 +6,8 @@ import 'package:go_router/go_router.dart';
 import '../../../../../constants.dart';
 import 'book_rating.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class BookListViewitem extends StatelessWidget {
+  const BookListViewitem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class BestSellerListViewItem extends StatelessWidget {
         GoRouter.of(context).push(AppRouter.kBookDetailsView);
       },
       child: SizedBox(
-        height: 120,
+        height: 130,
         child: Row(
           children: [
             AspectRatio(
@@ -32,7 +32,7 @@ class BestSellerListViewItem extends StatelessWidget {
               ),
             ),
            const SizedBox(
-            width: 30,
+            width: 25,
          ),
              Expanded(
                child: Column(
