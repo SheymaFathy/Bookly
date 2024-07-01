@@ -12,7 +12,7 @@ class BookListViewitem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         GoRouter.of(context).push(AppRouter.kBookDetailsView);
       },
       child: SizedBox(
@@ -31,44 +31,52 @@ class BookListViewitem extends StatelessWidget {
                     )),
               ),
             ),
-           const SizedBox(
-            width: 25,
-         ),
-             Expanded(
-               child: Column(
+            const SizedBox(
+              width: 25,
+            ),
+            Expanded(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width:MediaQuery.of(context).size.width * .5,
-                    child:  Text(
+                    width: MediaQuery.of(context).size.width * .5,
+                    child: Text(
                       'Harry Potter and the Goblet of fire',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: Styles.textStyle20.copyWith(fontFamily: kGtSectraFine),
+                      style: Styles.textStyle20
+                          .copyWith(fontFamily: kGtSectraFine),
                     ),
-                  ), 
-                   const SizedBox(height: 3,),
-                   const Text(
-                      'J.K. Rowling',
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: Styles.textStyle14,
-                    ),
-                     const SizedBox(height: 3,),
-                     Row(
-                      children: [
-                      Text("19.99 \$", style: Styles.textStyle20.copyWith(fontWeight: FontWeight.bold),),
+                  ),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const Text(
+                    'J.K. Rowling',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: Styles.textStyle14,
+                  ),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "19.99 \$",
+                        style: Styles.textStyle20
+                            .copyWith(fontWeight: FontWeight.bold),
+                      ),
                       const Spacer(),
-                       const BookRating(),
-                    ],),
-                   
+                      const BookRating(),
+                    ],
+                  ),
                 ],
-                         ),
-             ),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-

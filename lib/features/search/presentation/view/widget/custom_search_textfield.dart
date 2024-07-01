@@ -13,14 +13,18 @@ class CustomSearchTextField extends StatelessWidget {
         hintText: "Search",
         suffixIcon: IconButton(
           onPressed: () {},
-          icon: const Icon(FontAwesomeIcons.magnifyingGlass,size: 20,),
+          icon: const Icon(
+            FontAwesomeIcons.magnifyingGlass,
+            size: 20,
+          ),
         ),
       ),
     );
   }
 
   OutlineInputBorder buildOutlineInputBorder() {
-    return OutlineInputBorder(borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(color: Colors.grey));
+    return OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: const BorderSide(color: Colors.grey));
   }
 }

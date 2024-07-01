@@ -4,24 +4,22 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
 
-
 void main() {
   runApp(const Bookly());
 }
+
 class Bookly extends StatelessWidget {
   const Bookly({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp.router(
+    return MaterialApp.router(
       routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: kPrimeryColor,
-        textTheme:
-        GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+        textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
       ),
-      
     );
   }
 }

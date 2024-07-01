@@ -23,7 +23,7 @@ class BooksDetailsViewBody extends StatelessWidget {
                   CustomBookDetailsAppBar(),
                   BooksDeailsSection(),
                   BookAction(),
-                  Expanded( child: SizedBox(height: 50)),
+                  Expanded(child: SizedBox(height: 50)),
                   SililarBooksListViewSection(),
                   SizedBox(
                     height: 50,
@@ -37,4 +37,3 @@ class BooksDetailsViewBody extends StatelessWidget {
     );
   }
 }
-

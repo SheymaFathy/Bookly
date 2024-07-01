@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 
 import 'custom_book_item.dart';
@@ -12,7 +11,7 @@ class FeaturedBooksListView extends StatelessWidget {
       height: MediaQuery.of(context).size.height * .3,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemBuilder: (context , index){
+          itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0),
               child: CustomBookImage(),
